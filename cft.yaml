@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Buy Canadian Drugs through the Cloud!
+
+Parameters:
+  InstanceType:
+    Type: String
+    Description: Instance type for ~cryptomin~, er, uh, drug buying bot
+
+Resources:
+  CryptoMiner:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: ami-052efd3df9dad482
